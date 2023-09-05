@@ -1,0 +1,1 @@
+folder/all_image_files
