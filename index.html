@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7415561b05.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>UI/UX Designer</p> -->
+          <h1>Hi, I'm <span>Anjali</span></h1>
+          <p>DEVELOPER | ANALYST | TESTER</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about-img.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A dedicated Full-stack developer, holding a Master's degree from
+              Chandigarh University, adept in HTML, CSS, JavaScript, MongoDB,
+              NodeJS, and ExpressJS. Skilled in crafting dynamic web
+              applications, with a strong foundation in both front-end and
+              back-end technologies. Demonstrates proficiency in delivering
+              robust and efficient development solutions, leveraging expertise
+              in Full-stack development to drive innovation and excellence in
+              web projects. Passionate about continuous learning and staying
+              updated with the latest trends and technologies in the field to
+              ensure the delivery of cutting-edge solutions.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('projects')">Projects</p>
+              <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />HTML, CSS, JavaScript and ReactJS
+                </li>
+                <li>
+                  <span>Backend Develpment</span><br />NodeJS, ExpressJS,
+                  WebSockets
+                </li>
+                <li><span>API</span><br />RESTAPI, Postman</li>
+                <li><span>Database Administration</span><br />SQL, NOSQL</li>
+                <li><span>Web Designing</span><br />Web App Design</li>
+                <li><span>Computer Programming</span><br />Python, C++</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>UCodeSoft Pvt Ltd. Solutions</span><br />As a Junior
+                  Software Developer Trainee I transformed designs into stunning
+                  web experiences with newfound expertise in Frontend
+                  Development and GitHub mastery, thanks to UCodeSoft's
+                  comprehensive training.
+                </li>
+                <!-- <li><span>Web Development</span><br> web app Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-2024</span><br />MCA | Chandigarh University | 67.5
+                </li>
+                <li>
+                  <span>2019-2022</span><br />BCA | GGSCW - Panjab University |
+                  80.6
+                </li>
+                <li><span>2018</span><br />XII | KV | 80.4</li>
+                <li><span>2016</span><br />X | APS | 10 CGPA</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+              <ul>
+                <li>
+                  <span>PERSONAL PORTFOLIO WEBSITE</span><br />A portfolio
+                  website created using HTML, CSS, and JavaScript that have
+                  insight into my professional journey, my educational
+                  background, and notable projects.
+                </li>
+                <li>
+                  <span
+                    >DISASTER DETECTION MANAGEMENT SYSTEM USING DEEP LEARNING
+                    AI</span
+                  ><br />The Disaster Detection Management System is used to
+                  identify the disaster affected area by the change in patterns
+                  of satelite image . Keras and Pandas is used, with
+                  mathematical approach like convolution etc
+                </li>
+                <li>
+                  <span>B2C WEBSITE (FULL STACK)</span><br />Built a B2C website
+                  for selling wide variety of products. This website works on
+                  technology like HTML, CSS, Javascript, as well as NodeJS, and
+                  ExpressJS for backend development, Advanced Authentication
+                  tools are also integrated so that user can sign-up easily.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobbies">
+              <ul>
+                <li>Reading books</li>
+                <li>Painting</li>
+                <li>Table Tennis</li>
+                <li>Skateboarding</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I create custom, responsive, and visually appealing websites. My
+              services include user-friendly layouts, e-commerce designs, and
+              ongoing support. I deliver high-quality, innovative designs
+              tailored to your business needs. Contact me to elevate your online
+              presence today.
+            </p>
+            <!-- <a href="#">Learn More....</a> -->
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I specialize in creating intuitive and engaging user interfaces
+              and experiences. My services include user research, wireframing,
+              prototyping, and ongoing support. I deliver high-quality,
+              innovative designs tailored to your business needs. Contact me to
+              elevate your digital experience today.
+            </p>
+            <!-- <a href="#">Learn More....</a> -->
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Fullstack Development</h2>
+            <p>
+              I offer comprehensive full stack development services. From
+              front-end design to back-end integration, I create responsive,
+              high-performance websites and applications. My services include
+              custom development, e-commerce solutions, and ongoing support.
+              Contact me to elevate your online presence today.
+            </p>
+            <!-- <a href="#">Learn More....</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/portfolio-img-1.png" alt="" />
+            <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>
+                Designed a responsive portfolio website showcasing experience
+                and skills, adapting to various devices using CSS media queries.
+                Enhanced user experience and accessibility with interactive
+                JavaScript features like sliders, animations, and modal pop-ups
+                for project showcases.
+              </p>
+              <a href="https://github.com/Anjali-012/personal-portfolio"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/portfolio-img-2.png" alt="" />
+            <div class="layer">
+              <h3>Disaster Detection Management- Research Paper</h3>
+              <p>
+                Leveraged Pandas and Keras for efficient data handling and deep
+                learning model development, enhancing accuracy and performance.
+                Implemented CNN architecture for robust image recognition,
+                utilizing Google Satellite Image repository for comprehensive
+                analysis and training.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/portfolio-img-3.png" alt="" />
+            <div class="layer">
+              <h3>E-commerce Website</h3>
+              <p>
+                Enhanced user experience and accessibility with interactive
+                JavaScript features like sliders, animations, and modal pop-ups
+                for project showcases. Implemented features like user
+                authentication, shopping cart, and payment integration,
+                optimizing performance and scalability for high traffic.
+              </p>
+              <a href="https://github.com/Anjali-012/B2C-Store"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>anjaliii.2209@gmail.com</p>
+            <p><i class="fa-solid fa-phone-square-alt"></i>+91 (79736) 19239</p>
+            <div class="social-icons">
+              <!-- <a href="https://facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a> -->
+              <a href="www.linkedin.com/in/buenosanjali/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="Anjali-Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name..."
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email..."
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your message..."
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169; All rights reserved</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwvV5wSAz79Kzg1VcxTZG8dFj5DaqdO3WKbexzOCxDNtY6tWrTtrbco_vaGN9-ECWug/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Msg sent successfully";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
